@@ -1,0 +1,203 @@
+<form >
+  
+  <style>
+    body{
+      background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #335c81 74%);
+    }
+    label{
+      color: rgb(251, 251, 251);
+    }
+    fieldset{
+      color :rgb(255, 255, 255);
+      width: 500px;
+      
+      border-radius: 15px;
+    }
+    ::placeholder{
+      color: lightcyan
+      font-style: oblique;
+    }
+    input:required{
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+    }
+    input:hover{
+      opacity: 0.8;
+    }
+    input[readonly]{
+      border: none;
+      border-radius: 5px;
+    }
+    select{
+      background-color: rgb(173, 213, 238);
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .sub{
+      margin-top: 8px;
+      margin-bottom: 3px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 5px;
+      padding-right: 5px;
+      box-shadow: 3px 3px 10px white;
+      border: none;
+      border-radius: 10px;
+    }
+    .reset{
+      margin-top: 8px;
+      margin-bottom: 3px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 5px;
+      padding-right: 5px;
+      box-shadow: 3px 3px 10px white;
+      border: none;
+      border-radius: 10px;
+
+    }
+    .sub:active{
+      background-color: black;
+      color: white;
+    }
+    .reset:active{
+      background-color: black;
+      color: white;
+    }
+    
+   </style>
+  <fieldset>
+    <legend>Personal Details</legend>
+  <table>
+    <tr>
+      <td>
+        <label >Name</label>
+      </td>
+      <td><input type="text" placeholder="EX:Vasu" required></td>
+      
+    </tr>
+    <tr>
+      <td>
+        <label for="">Surname</label>
+      </td>
+      <td><input type="text" placeholder="EX:Marripati" required></td>
+      
+    </tr>
+    <tr>
+      <td>
+        <label for="">Phone NO</label>
+      </td>
+      <td><input type="tel" placeholder="EX:91******68" required 
+        size="10"></td>
+      
+    </tr>
+    <tr>
+      <td>
+        <label for="">Email</label>
+      </td>
+      <td><input type="text" placeholder="EX:sreevasu476@gmail.com" required ></td>
+      
+    </tr>
+    <tr>
+      <td>
+        <label >Password</label>
+      </td>
+      <td><input type="password" required></td>
+      
+    </tr> <tr>
+      <td>
+        <label for="">Conform Password</label>
+      </td>
+      <td><input type="password" required></td>
+      
+    </tr>
+    <tr>
+      <td>
+        <label for="">Date Of Birth</label>
+      </td>
+      <td><input type="date" ></td>
+    </tr>
+    <tr>
+      <td>
+        <label for="">Gender</label>
+      </td>
+      <td>
+      <input type="radio" value="M"><label>Male</label> 
+      <input type="radio" value="F"><label for="">Female</label>
+      <input type="radio" value="O"><label for="">Others</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="">Select Country</label>
+      </td>
+      <td><select name="" id="">
+        <option value="">Enter Country</option>
+        <option value="">INDIA</option>
+        <option value="">USA</option>
+        <option value="">UK</option>
+        <option value="">UAE</option>
+      </select>
+      </td>      
+    </tr>
+    <tr>
+      <td>
+    <input type="reset" class="reset">
+    </td>
+      </tr>
+  </table>
+  </fieldset>
+ 
+  </form>
+<form>
+  <fieldset>
+    <legend>
+      Course Details
+    </legend>
+  <table>
+  </tr> 
+  <tr>
+    <td>
+      <label for="">Select Course</label>&nbsp;&nbsp;
+      <select name="" id="">
+      <option value="">Java</option>
+      <option value="">Python</option>
+      <option value="">C</option>
+    </select>
+  </tr>
+  <tr>
+    <td>
+      <label>Teaching Mode</label>
+    <input type="checkbox"><label for="">ONLINE</label> 
+    <input type="checkbox"><label for="">OFFLINE</label>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>
+        Accadamy
+      </label>
+      <input placeholder="TAP Accadamy" readonly>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>
+        Comment
+      </label><br>
+      <input type="textarea">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <input type="submit" class="sub">
+    </td>
+  </tr>
+  </table>
+  </fieldset>
+</form>
